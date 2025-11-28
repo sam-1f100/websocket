@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  signalling:
+    container_name: webrtc-signalling
+    build: .
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
